@@ -1,6 +1,5 @@
 import torch
 from torch.fx import symbolic_trace
-# Simple module for demonstration
 class MyModule(torch.nn.Module):
     def __init__(self):
         super().__init__()
@@ -13,7 +12,10 @@ class MyModule(torch.nn.Module):
 module = MyModule()
 
 # Symbolic tracing frontend - captures the semantics of the module
-symbolic_traced : torch.fx.GraphModule = symbolic_trace(module)
+gm: torch.fx.GraphModule = symbolic_trace(module)
 
 # High-level intermediate representation (IR) - Graph representation
-print(symbolic_traced.graph)
+print(gm.graph.print_tabular())
+
+for fx_node in gm.graph.nodes:
+    print(fx_node)
