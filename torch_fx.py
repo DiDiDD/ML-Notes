@@ -17,5 +17,5 @@ gm: torch.fx.GraphModule = symbolic_trace(module)
 # High-level intermediate representation (IR) - Graph representation
 print(gm.graph.print_tabular())
 
-for fx_node in gm.graph.nodes:
-    print(fx_node)
+# for fx_node in gm.graph.nodes:
+#     print(fx_node)
