@@ -4,7 +4,7 @@
 
 ### Remove .idea files from PHPStorm with git & .gitignore
 ```
-git rm --cached .idea/
+git rm -r --cached .idea/
 echo '.idea' >> .gitignore
 git add .gitignore
 git commit -m "Removed .idea files"
