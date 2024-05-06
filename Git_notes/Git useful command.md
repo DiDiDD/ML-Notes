@@ -12,7 +12,7 @@ git commit -m "Removed .idea files"
 
 ### Remove .DS_Store files from PHPStorm with git & .gitignore
 ```
-git rm --cached .DS_Store/
+git rm --cached .DS_Store
 echo '.DS_Store' >> .gitignore
 git add .gitignore
 git commit -m "Removed .DS_Store files"
