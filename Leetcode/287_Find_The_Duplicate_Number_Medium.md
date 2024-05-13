@@ -5,6 +5,3 @@
 
 ## Method 2: Use fast-slow-pointers
 
-
-## Method 3: Bit-wise XOR operation
-
