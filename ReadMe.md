@@ -1,3 +1,3 @@
-This repo contains the code for some projects I did for fun.
+# Notes for 
 
-I am
+I am trying to bu
