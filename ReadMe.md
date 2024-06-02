@@ -1,3 +1,3 @@
-# Notes for 
+# Notes for Machine Learning
 
-I am trying to bu
+To be done
