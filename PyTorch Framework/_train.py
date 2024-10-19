@@ -77,11 +77,6 @@ def train_model(model,
         train_loss = running_loss / len(train_loader)
         train_loss_history.append(train_loss)
 
-        # if epoch % 50 == 0:
-        #     print(torch.stack((outputs, labels), dim=-1))
-        print(acc(outputs, labels))
-            # breakpoint()
-
         # Validation phase
         model.eval()
         val_loss = 0.0
